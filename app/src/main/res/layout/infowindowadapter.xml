@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="261dp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#CDDC39"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="260dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgicono"
+                android:layout_width="19dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="@+id/lblweb"
+                app:layout_constraintTop_toBottomOf="@+id/lblweb" />
+
+            <TextView
+                android:id="@+id/lblNombre"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="Nombre del Lugar"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgUsr" />
+
+            <TextView
+                android:id="@+id/lblweb"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Horario"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/lblDireccion"
+                app:layout_constraintStart_toStartOf="@+id/lblDireccion"
+                app:layout_constraintTop_toBottomOf="@+id/lblDireccion" />
+
+            <ImageView
+                android:id="@+id/imgUsr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#000000"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/lblDireccion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Dirección"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/lblNombre"
+                app:layout_constraintStart_toStartOf="@+id/lblNombre"
+                app:layout_constraintTop_toBottomOf="@+id/lblNombre" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
