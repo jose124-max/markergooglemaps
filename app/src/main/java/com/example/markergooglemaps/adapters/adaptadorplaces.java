@@ -57,7 +57,6 @@ public class adaptadorplaces implements GoogleMap.InfoWindowAdapter {
         }
         return v;
         } catch (Exception e) {
-            // Manejar la excepción aquí, por ejemplo, mostrar un marcador de posición o un mensaje de error.
             e.printStackTrace();
             return null;
         }

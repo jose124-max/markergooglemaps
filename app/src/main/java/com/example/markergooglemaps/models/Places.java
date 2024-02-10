@@ -52,14 +52,12 @@ public class Places {
         if(!a.isNull("opening_hours")){
             JSONObject horario = a.getJSONObject("opening_hours");
             if(horario.getString("open_now")=="true")
-                open_now = ("Esta Abierto");
-            else open_now = ("Esta Cerrado");
+                open_now = ("Abierto");
+            else open_now = ("Cerrado");
         }else
         {
             open_now = "No tiene horario";
         }
-        System.out.println("Hola aqui el horario = " + open_now);
-
         //para sacar las photos
         JSONObject JSONlista = null;
         JSONlista = a;
@@ -73,7 +71,6 @@ public class Places {
         {
             photo_reference = "No tiene foto";
         }
-        System.out.println("Hola aqui la foto = " + photo_reference);
     }
 
 
